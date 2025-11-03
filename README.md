@@ -62,17 +62,17 @@ Then confirm the file exists with:
 --------------------------------------------------------------
 How to Run
 --------------------------------------------------------------
-1. Make sure the dataset is available in the working directory.
-2. Open a terminal in this folder and run:
+1. Make sure the dataset (`GSE30550_series_matrix.txt`) is located in the same folder.
+2. Open a terminal in this directory and run:
 
     python Influenza.py
 
-3. The script will:
-   - Load and preprocess the expression matrix
-   - Perform ANOVA feature selection (top 200 genes)
-   - Train and evaluate multiple classifiers using cross-validation
-   - Display model performance metrics and confusion matrices
-   - Visualize PCA and gene expression heatmaps
+The script will:
+- Load and preprocess the gene expression matrix
+- Perform ANOVA feature selection (top 200 genes)
+- Train and evaluate multiple classification models
+- Print detailed evaluation metrics
+- Display visualizations and summary tables
 
 --------------------------------------------------------------
 Models Evaluated
