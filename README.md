@@ -35,12 +35,29 @@ To install all dependencies:
     pip install numpy pandas seaborn matplotlib scikit-learn xgboost lightgbm gseapy
 
 --------------------------------------------------------------
-Input Data
+Input Data — Downloading the Dataset
 --------------------------------------------------------------
-File: GSE30550_series_matrix.txt
+Dataset: **GSE30550 — Influenza A virus infection of human plasmacytoid dendritic cells (pDCs)**
 
-- Download this dataset from the NCBI GEO database.
-- Place it in the same directory as the script before running.
+You can obtain the data in two ways:
+
+**Option 1: Manual Download**
+1. Go to the NCBI GEO dataset page:  
+   https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30550  
+2. Scroll to the “Download family” section.  
+3. Download the file named **GSE30550_series_matrix.txt.gz**
+4. Extract the file (e.g., using WinRAR, 7-Zip, or `gunzip` on macOS/Linux):
+   gunzip GSE30550_series_matrix.txt.gz
+5. Place the extracted file (`GSE30550_series_matrix.txt`) in the same directory 
+   as the Python script (`Influenza.py`).
+
+**Option 2: Command Line Download (macOS/Linux)**
+If you have `wget` installed:
+   wget https://ftp.ncbi.nlm.nih.gov/geo/series/GSE30nnn/GSE30550/matrix/GSE30550_series_matrix.txt.gz
+   gunzip GSE30550_series_matrix.txt.gz
+
+Then confirm the file exists with:
+   ls GSE30550_series_matrix.txt
 
 --------------------------------------------------------------
 How to Run
