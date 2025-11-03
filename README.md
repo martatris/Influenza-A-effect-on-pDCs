@@ -1,6 +1,4 @@
 # Gene Expression Classification: Influenza A Effect on pDCs
-
-Python Version: 3.9+
 --------------------------------------------------------------
 
 🧬 Overview
