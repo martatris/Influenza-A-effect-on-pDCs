@@ -1,7 +1,7 @@
 # Gene Expression Classification: Influenza A Effect on pDCs
 --------------------------------------------------------------
 
-🧬 Overview
+Overview
 --------------------------------------------------------------
 This project analyzes gene expression data to study the effects of Influenza A 
 infection on plasmacytoid dendritic cells (pDCs). Using the dataset 
@@ -18,7 +18,7 @@ The pipeline includes:
 6. Heatmap of top genes
 
 --------------------------------------------------------------
-📦 Dependencies
+Dependencies
 --------------------------------------------------------------
 This script requires the following Python libraries:
 
@@ -35,7 +35,7 @@ To install all dependencies:
     pip install numpy pandas seaborn matplotlib scikit-learn xgboost lightgbm gseapy
 
 --------------------------------------------------------------
-📁 Input Data
+Input Data
 --------------------------------------------------------------
 File: GSE30550_series_matrix.txt
 
@@ -43,7 +43,7 @@ File: GSE30550_series_matrix.txt
 - Place it in the same directory as the script before running.
 
 --------------------------------------------------------------
-⚙️ How to Run
+How to Run
 --------------------------------------------------------------
 1. Make sure the dataset is available in the working directory.
 2. Open a terminal in this folder and run:
@@ -58,7 +58,7 @@ File: GSE30550_series_matrix.txt
    - Visualize PCA and gene expression heatmaps
 
 --------------------------------------------------------------
-🧠 Models Evaluated
+Models Evaluated
 --------------------------------------------------------------
 The script compares the following classifiers:
 
@@ -78,7 +78,7 @@ Metrics reported:
 - ROC-AUC (one-vs-rest)
 
 --------------------------------------------------------------
-📊 Output & Visualization
+Output & Visualization
 --------------------------------------------------------------
 The following visual outputs are generated:
 
@@ -90,7 +90,7 @@ The following visual outputs are generated:
 If GSEApy is installed, pathway enrichment analysis is also attempted.
 
 --------------------------------------------------------------
-⚠️ Notes
+Notes
 --------------------------------------------------------------
 - Some classifiers (like LightGBM or XGBoost) may require extra memory; 
   if you encounter issues, reduce the number of folds or disable parallel jobs.
@@ -98,32 +98,17 @@ If GSEApy is installed, pathway enrichment analysis is also attempted.
   ("hour", "post", or "flu" → Infected).
 
 --------------------------------------------------------------
-📈 Example Results
+Example Results
 --------------------------------------------------------------
 After running, you will see outputs similar to:
 
-    🧬 Selected top 200 genes using ANOVA F-test
-    🔍 Evaluating Random Forest...
-    ✅ CV Accuracy: 0.94 | F1: 0.93 | ROC-AUC: 0.95
-    🧾 Test Accuracy: 0.92 | F1: 0.91 | ROC-AUC: 0.94
-    📋 Classification Report:
+    Selected top 200 genes using ANOVA F-test
+    Evaluating Random Forest...
+    CV Accuracy: 0.94 | F1: 0.93 | ROC-AUC: 0.95
+    Test Accuracy: 0.92 | F1: 0.91 | ROC-AUC: 0.94
+    Classification Report:
                 precision  recall  f1-score  support
       Control       0.90     0.93     0.91
       Infected      0.94     0.92     0.93
 
---------------------------------------------------------------
-🧩 Optional: Pathway Enrichment
---------------------------------------------------------------
-If `gseapy` is installed, the script will attempt pathway enrichment 
-analysis on the top 30 ANOVA-selected genes using KEGG and GO datasets.
 
---------------------------------------------------------------
-📚 Citation
---------------------------------------------------------------
-If you use this code or dataset in your research, please cite:
-- GEO accession GSE30550
-- Relevant Influenza A / pDCs transcriptomics literature
-
---------------------------------------------------------------
-✅ End of README
---------------------------------------------------------------
