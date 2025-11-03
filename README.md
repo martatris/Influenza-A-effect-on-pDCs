@@ -35,9 +35,9 @@ To install all dependencies:
     pip install numpy pandas seaborn matplotlib scikit-learn xgboost lightgbm gseapy
 
 --------------------------------------------------------------
-Input Data — Downloading the Dataset
+Input Data - Downloading the Dataset
 --------------------------------------------------------------
-Dataset: **GSE30550 — Influenza A virus infection of human plasmacytoid dendritic cells (pDCs)**
+Dataset: **GSE30550 - Influenza A virus infection of human plasmacytoid dendritic cells (pDCs)**
 
 You can obtain the data in two ways:
 
@@ -95,7 +95,7 @@ Metrics reported:
 - ROC-AUC (one-vs-rest)
 
 --------------------------------------------------------------
-Output & Visualization
+Output and Visualization
 --------------------------------------------------------------
 The following visual outputs are generated:
 
